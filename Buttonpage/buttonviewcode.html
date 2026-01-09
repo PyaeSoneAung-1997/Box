@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button View Code</title>    
+    <link  rel="stylesheet" href="buttonviewcode.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <div class="code_container">
+            <div class="code_view_container">
+                <div class="code_view_left_container">
+
+                    <div class="code_view_close_button_container">
+                        <a href="buttonmain.html">
+                            <div class="code_view_close_button">
+                                <i class="fa-solid fa-arrow-left"></i>
+                                Back
+                            </div>
+                        </a>
+                    </div>         
+
+                    <div class="code_view_button_container">                        
+                       <iframe id="preview_frame"></iframe>
+                    </div>
+                </div>
+
+                <div class="code_view_right_container">
+                    <div class="code_view_type_container">
+                        <span id="pure_css">Pure CSS</span>
+                        <span id="thaiwand_css">Thaiwand CSS</span>
+                        <span id="react">React</span>
+                    </div>
+                    <div class="code_view_output_container">
+                        <div id="html_code_output_container"> 
+                                <div class="code_view_edit_container">     
+                                    <div class="html_logo_container">
+                                        <i class="fa-brands fa-html5"></i>
+                                        Html
+                                    </div>
+                                    <div class="copy_button_container">
+                                        <button class="copy_button" data-target="codetextarea">
+                                            <i class="fa-slab-press fa-regular fa-copy"></i>
+                                            Copy
+                                        </button>
+                                        <button class="copided_button">
+                                        <i class="fa-solid fa-check"></i> 
+                                        Copied!
+                                        </button>
+                                    </div>
+                                </div>  
+                                <div class="codetextarea">
+                                    <textarea></textarea>
+                                </div>
+                               
+                        </div>
+                        <div id="css_code_output_container"> 
+                                <div class="code_view_edit_container">    
+                                    <div class="css_logo_container">
+                                    <i class="fa-brands fa-css3"></i>
+                                    CSS
+                                    </div> 
+                                    <div class="copy_button_container">     
+                                        <button class="copy_button" data-target="csslineBox">
+                                            <i class="fa-slab-press fa-regular fa-copy"></i>
+                                            Copy
+                                        </button>
+                                        <button class="copided_button" data-target="csslineBox">
+                                        <i class="fa-solid fa-check"></i> 
+                                        Copied!
+                                        </button>
+                                    </div>  
+                                </div>  
+                                  
+                                <div class="codetextarea">
+                                    <textarea></textarea>
+                                </div>
+                        </div>
+                        <div id="js_code_output_container"> 
+                                <div class="code_view_edit_container">  
+                                    <div class="js_logo_container">
+                                    <i class="fa-brands fa-js"></i>
+                                    Javascript
+                                    </div>    
+                                    <div class="copy_button_container">       
+                                        <button class="copy_button" data-target="jslineBox">
+                                            <i class="fa-slab-press fa-regular fa-copy"></i>
+                                            Copy
+                                        </button>
+                                        <button class="copided_button" data-target="jslineBox">
+                                        <i class="fa-solid fa-check"></i> 
+                                        Copied!
+                                        </button>
+                                    </div>    
+                                </div>    
+                                <div class="codetextarea">
+                                    <textarea></textarea>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>    
+    <script src="buttonviewcode.js"></script>
+    <!-- <script src="view.js"></script> -->
+</body>
+</html>

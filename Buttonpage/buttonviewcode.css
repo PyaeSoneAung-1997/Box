@@ -1,0 +1,193 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    background: #020617;
+}
+.code_container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+    /* border:4px solid rgb(245, 13, 13); */
+}
+.code_view_container {
+    height: 100%;
+    width: 100%;  
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(143, 128, 128);    
+}
+.code_view_left_container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width:50%;
+    background: #020617;
+    border-right:4px solid white;
+}
+.code_view_left_container .code_view_close_button_container{
+    margin-top: 4px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;    
+    caret-color: transparent;
+    cursor: pointer;
+    /* border:2px solid rgba(99, 236, 94, 0.918); */
+}
+.code_view_left_container .code_view_close_button_container a{
+    text-decoration: none;
+    color:black;
+}
+.code_view_left_container .code_view_close_button_container .code_view_close_button {
+    margin-left: 2px;
+    white-space: nowrap;
+    padding:5px;
+    background-color: #1edbd2;
+    border-radius: 6px;
+    border: 2px solid rgb(48, 41, 41);
+}
+.code_view_left_container .code_view_close_button_container .code_view_close_button:hover{
+     background-color: #2aa8a2;
+     color:white;
+}
+.code_view_left_container .code_view_button_container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#preview_frame {
+  width:100%;
+  border: none;
+}
+.code_view_right_container{
+    display: flex;
+    flex-direction: column;
+    width:50%;
+    background: #020617;
+}
+.code_view_right_container .code_view_type_container{
+    margin-top: 4px;
+    padding-right: 20px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;    
+    justify-content: flex-end;
+    caret-color: transparent;
+    cursor: pointer;    
+    /* border:2px solid rgba(99, 236, 94, 0.918); */
+}
+.code_view_right_container .code_view_type_container span{
+    margin-left: 10px;
+    white-space: nowrap;
+    padding:5px;
+    background-color: #1edbd2;
+    border-radius: 4px;
+}
+.code_view_right_container .code_view_type_container span:hover{
+    background-color: #2aa8a2;
+    color:white;
+}
+.code_view_right_container .code_view_output_container{
+        margin-top: 4px;        
+        height: 100%;
+        display: grid;
+        grid-template-rows: repeat(3, 1fr);
+        gap: 10px;
+        padding:4px;
+        /* border:4px solid red;       */
+}
+
+#html_code_output_container,
+#css_code_output_container,
+#js_code_output_container {
+        overflow: hidden;   
+        border-radius: 12px;
+        border:1px solid rgb(172, 172, 172);      
+}
+#html_code_output_container .code_view_edit_container,
+#css_code_output_container .code_view_edit_container,
+#js_code_output_container .code_view_edit_container{
+    display: flex;
+    height: 12%;
+    align-items: center;
+    padding:12px;
+    border-bottom:2px solid rgb(172, 172, 172);
+}
+
+#html_code_output_container .code_view_edit_container .html_logo_container{
+    color:#f97316;
+    font-size: 20px;
+    margin-right: auto;
+}
+#css_code_output_container .code_view_edit_container .css_logo_container{
+    color:#38bdf8;
+    font-size: 20px;
+    margin-right: auto;
+}
+#js_code_output_container .code_view_edit_container .js_logo_container{
+    color:#facc15;
+    font-size: 20px;
+    margin-right: auto;
+}
+#html_code_output_container .copy_button_container button,
+#css_code_output_container .copy_button_container button,
+#js_code_output_container .copy_button_container button{    
+    padding:4px;
+    color:rgba(255, 255, 255, 0.733);
+    border:none;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;  
+    background: none;
+    border-radius: 5px;
+}
+#html_code_output_container .copy_button_container button:last-child,
+#css_code_output_container .copy_button_container button:last-child,
+#js_code_output_container .copy_button_container button:last-child{    
+    display: none;
+}
+#html_code_output_container button i,
+#css_code_output_container button i,
+#js_code_output_container button i{
+    font-size: 16px;
+}
+.code_view_output_container .codetextarea {
+    height: 100%;
+}
+.code_view_output_container .codetextarea textarea{
+    height: 90%;
+    width: 100%;
+    padding: 14px;
+    background: #020617;
+    color: #e5e7eb;
+    border: none;
+    resize: none;
+    font-size: 16px;
+    color:rgb(20, 255, 20);
+    
+    /* border:4px solid red; */
+}
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px rgb(148, 148, 148);
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.747);
+}
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(240, 240, 240);
+}
+
